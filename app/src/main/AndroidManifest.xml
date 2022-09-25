@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.to_do_list.app">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon_foreground"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Todolist">
+        <activity
+            android:name=".todolist.EditDeleteToDoListActivity"
+            android:exported="true"
+            />
+        <activity
+            android:name=".todolist.MainActivity"
+            android:exported="true"
+            android:label="Main" />
+        <activity
+            android:name=".todolist.AddToDoLIstActivity"
+            android:exported="true" />
+        <activity
+            android:name=".todo.ToDoOverviewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".todo.TodoAddUpdateDeleteActivity"
+            android:exported="true" />
+        <activity
+            android:name=".todo.AddToDoActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
